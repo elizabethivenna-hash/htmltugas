@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smak stanislaus & Informatika UKWMS</title>
+  
+  <style>
+    :root {
+      --warna1-logo-bg: #2e7d32;      /* Hijau tua */
+      --warna2-logo-ikon: #ffffff;    /* Putih */
+      --warna3-bg-kotak: #f5f5f5;     /* Abu-abu muda */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: #0099ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .kotak-utama {
+      width: 100%;
+      max-width: 650px;
+      background-color: var(--warna3-bg-kotak);
+      border-radius: 18px;
+      padding: 50px 25px 40px;
+      box-shadow: 0 8px 25px rgb(166, 255, 0);
+      text-align: center;
+      
+    }
+
+    /* === 2 Logo Bulat Besar di Tengah === */
+    .logo-tengah-container {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 30px;
+    }
+
+    .logo-tengah {
+      width: 120px;
+      height: 120px;
+      background-color: var(--warna1-logo-bg);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid var(--warna2-logo-ikon);
+    }
+
+    .logo-tengah img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+    }
+    /* === Judul === */
+    h1 {
+      margin-bottom: 30px;
+      color: #222;
+      font-size: 2rem;
+    }
+
+    /* === 2 Logo Kecil di Bawah === */
+    .logo-bawah-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 35px;
+    }
+
+    .logo-kecil {
+      width: 70px;
+      height: 70px;
+      background-color: var(--warna1-logo-bg);
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid var(--warna2-logo-ikon);
+    }
+
+    .logo-kecil img {
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+    }
+
+    /* === Footer === */
+    footer {
+      color: #444;
+      font-size: 1.05rem;
+      margin-top: 10px;
+    }
+
+    footer a {
+      color: #1976d2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsif untuk HP */
+    @media (max-width: 480px) {
+      .logo-tengah-container,
+      .logo-bawah-container {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .logo-tengah {
+        width: 110px;
+        height: 110px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="kotak-utama">
+
+    <!-- 2 Logo Bulat Besar di Tengah -->
+    <div class="logo-tengah-container">
+      <div class="logo-tengah">
+        <img src="logo wm.jpg" alt="Logo Tengah 1">
+      </div>
+      <div class="logo-tengah">
+        <img src="smakstasby.png" alt="Logo Tengah 2">
+      </div>
+    </div>
+
+    <!-- Judul -->
+    <h1>TIK
+    </h1>
+
+    <!-- 2 Logo Kecil di Bawah -->
+    <div class="logo-bawah-container">
+      <div class="logo-kecil">
+        <img src="IG.png" alt="Logo Bawah 1">
+      </div>
+      <div class="logo-kecil">
+        <img src="IG.png" alt="Logo Bawah 2">
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>|© copyright Nama_IvennaElizabeth| 
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
